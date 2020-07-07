@@ -13,7 +13,10 @@ On the backend Zper is using celery to call the zcashd node and to get notified 
 An, extension of zper could use django 3.0s new ASGI features to authenticate and manage the payments via the django framework but pass off the authenticated requests to a more sophisticated async service for things like live streaming video, or high-frequency/enriched-data API access. Basically, ideally the content and service behind the pay wall could be built on any framework with the zper django app acting as a proxy with some invoicing features.
 also would be good to extend to the client side. A sortof specialized thin wallet which knows how to derive these keys and make requests with them.
 
-#TODO
+# TODO
 - Set Permisssions for which specific endpoints can be accessed by which key
 - Update process_tx to allow for purchasing multiple endpoints from the same pubkey
+- update process_tx to allow for a key at or near expirary to be extended simply buy making another payment
 - All the Admin views need authentication decorators
+- Make PremiumViews and AdminViews classes so they can be easily duplicated
+- The block notify endpoint needs to be secured so that only the node can call it
