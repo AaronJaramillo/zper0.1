@@ -21,3 +21,4 @@ also would be good to extend to the client side. A sortof specialized thin walle
 - Make PremiumViews and AdminViews classes so they can be easily duplicated
 - The block notify endpoint needs to be secured so that only the node can call it
 - Dockerize all the services more cleanly so that zper can drop into a microservice application easily
+- Change CreateProductAPI view to use create_new_product model function to automatically generate an new z_addr
