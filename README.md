@@ -6,7 +6,7 @@ Zper exposes some basic admin APIs for the merchant to create various products w
 Each product, is associated with an endpoint and a z addr. The client simply has to send a payment of a sufficient amount to the z-address for the desired endpoint including, in the memo field, a RSA public key.
 
 Zper will check that the payment has been made and store the public key so that the client make requests to a premium endpoint signed with his private RSA key 
-and zper with Authenticate the request and pass along the response. 
+and zper will authenticate the request and pass along the response. 
 
 On the backend Zper is using celery to call the zcashd node and to get notified of new transactions.
 
