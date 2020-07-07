@@ -1,2 +1,2 @@
 # zper
-zper is a work in progress
+Zper is a paywall merchant app, built on django, designed for use with zcash private transactions
