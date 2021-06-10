@@ -4,7 +4,7 @@ billiard==3.6.3.0
 celery==4.4.6
 certifi==2020.6.20
 chardet==3.0.4
-Django==3.0.7
+Django==3.1.12
 djangorestframework==3.11.0
 drf-httpsig==1.2.1.dev0+ga84326d.d20200706
 future==0.18.2
